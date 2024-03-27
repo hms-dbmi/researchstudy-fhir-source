@@ -1,0 +1,223 @@
+{
+  "id": "ppmg-research-study",
+  "contained": [
+     {
+        "id": "enrollmentgroup",
+        "actual": false,
+        "characteristic": [
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "language-english",
+                       "display": "Comfortable in reading and writing in english",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Are you comfortable reading and writing in English on your iPhone?"
+              },
+              "exclude": false,
+              "valueBoolean": true
+           },
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "location-US",
+                       "display": "Residents of the United States",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Do you live in the United States?"
+              },
+              "exclude": false,
+              "valueBoolean": true
+           },
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "30525-0",
+                       "display": "Age between 40 and 75 years",
+                       "system": "http://loinc.org"
+                    }
+                 ],
+                 "text": "What is your age?"
+              },
+              "exclude": false,
+              "valueRange": {
+                 "high": {
+                    "value": 75
+                 },
+                 "low": {
+                    "value": 40
+                 }
+              }
+           },
+           {
+              "extension": [
+                 {
+                    "url": "http://dbmi.hms.harvard.edu/fhir/group-learnMore",
+                    "valueString": "<ol><li>Open the Health app and tap the Summary tab. </li><li>Tap your profile picture in the top right-hand corner.</li><li>Under Features, <i>tap</i> <b>Health Records</b>, then tap <b>Get Started</b>. To add another provider, scroll down to Features, then tap Add Account.</li><li>You'll be prompted to allow the Health app to use your location to find hospitals and health networks near you. Choose either Allow Once, Allow While Using App or Don't Allow.</li><li>Search for your<strong>care provider / health system</strong>, then tap it.</li><li>Under Available To Connect, choose an option. </li><li>Sign in into the portal. You may be asked to save your password.</li><li>Wait for your records to update. It may take a minute for your information to appear.</li><li>Resume the <strong>second task</strong> to retrieve your health records</li></ol>"
+                 }
+              ],
+              "code": {
+                 "coding": [
+                    {
+                       "code": "link-ehrs",
+                       "display": "Willing to link and share health record from your iPhone's Health app",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Are you okay to link your iPhone's Health app with your electronic health record (EHR) of your care provider(s), if not already linked?\n\nThis is required to retrieve your EHR data for estimating risk of heart disease."
+              },
+              "exclude": false,
+              "valueBoolean": true
+           },
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "heart-status",
+                       "display": "Having No history of heart attack, stroke or other heart related illness",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Have you ever had a heart attack, stroke or other heart related illness?"
+              },
+              "exclude": false,
+              "valueBoolean": false
+           }
+        ],
+        "code": {
+           "text": "This study is open to adults ages 40 and over who have not been diagnosed with heart disease or stroke (known as atherosclerotic cardiovascular disease) or had episodes of heart failure.\n\nParticipants must be residents of the United States.\n\nYou will need a compatible iPhone running iOS 14.0 or above and have connected the Apple Health app with your care-provider's patient portal.",
+           "_text": {
+              "extension": [
+                 {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style>body { font: -apple-system-body; }</style></head>This study is open to adults ages 40 and over who have <strong>not</strong> been diagnosed with heart disease or stroke (known as atherosclerotic cardiovascular disease) or had episodes of heart failure.<br/><br/>Participants must be residents of the United States.<br/><br/>You will need a compatible iPhone running iOS 14.0 or above and have connected the Apple Health app with your care provider's patient portal.</div>"
+                 }
+              ]
+           }
+        },
+        "name": "PPMG Study Inclusion Criteria",
+        "type": "person",
+        "resourceType": "Group"
+     },
+     {
+        "id": "hms_organization",
+        "alias": [
+           "Department of Biomedical Informatics, Harvard Medical School"
+        ],
+        "identifier": [
+           {
+              "system": "https://hms.harvard.edu",
+              "value": "Department of Biomedical Informatics"
+           }
+        ],
+        "name": "Harvard Medical School",
+        "resourceType": "Organization"
+     }
+  ],
+  "condition": [
+     {
+        "coding": [
+           {
+              "code": "hypercholesterolemia_snomed_code",
+              "display": "Hypercholesterolemia",
+              "system": "http://snomed.info/sct"
+           }
+        ],
+        "text": "Conditions: Hypercholesterolemia"
+     }
+  ],
+  "contact": [
+     {
+        "name": "Cassandra Perry",
+        "telecom": [
+           {
+              "system": "phone",
+              "value": "(617)-432-5484"
+           },
+           {
+              "system": "email",
+              "value": "ppm@hms.harvard.edu"
+           }
+        ]
+     }
+  ],
+  "description": "<center><img style='margin: 1em 0;' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUuMDQiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxMTUuMDQgMzAiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiM0ZjUxNWI7fS5ie2ZpbGw6I2ViMjIyNzt9LmN7ZmlsbDojMzZhYWRiO30uZHtmaWxsOiM2ZDdmYTQ7fS5le2ZpbGw6I2E1NTU2ZDt9LmZ7ZmlsbDojZWEyMjI4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+cHBtX1JHQl8xMTV4MzA8L3RpdGxlPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDk2LjQ1LDQ4NS4zNWgzLjE3YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MDQuNDEsNDg1LjM1aDUuOTV2MS43NGgtMy45MnYxLjEySDUxMHYxLjYyaC0zLjU1VjQ5MWg0djEuNzRoLTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MTIsNDg5LjA3djBhNCw0LDAsMCwxLDgsMHYwYTQsNCwwLDAsMS04LDBabTUuODcsMHYwYTEuOTIsMS45MiwwLDAsMC0xLjktMiwxLjg4LDEuODgsMCwwLDAtMS44NywydjBhMS45MiwxLjkyLDAsMCwwLDEuODksMkExLjg5LDEuODksMCwwLDAsNTE3Ljg3LDQ4OS4wN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUyMS44OCw0ODUuMzVINTI1YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MjkuODMsNDg1LjM1aDJWNDkxaDMuNTh2MS44aC01LjYzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTM3LjE5LDQ4NS4zNWg1Ljk1djEuNzRoLTMuOTJ2MS4xMmgzLjU1djEuNjJoLTMuNTVWNDkxaDR2MS43NGgtNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTU0NC44NSw0ODguNTZoMy40N3YxLjc2aC0zLjQ3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDk2LjQ1LDQ5Ni4zMWgzLjE3YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MDQuMTUsNTAwdjBhNCw0LDAsMCwxLDgsMHYwYTQsNCwwLDAsMS04LDBabTUuODcsMHYwYTEuOTIsMS45MiwwLDAsMC0xLjktMiwxLjg4LDEuODgsMCwwLDAtMS44NywydjBhMS45MiwxLjkyLDAsMCwwLDEuODksMkExLjg5LDEuODksMCwwLDAsNTEwLDUwMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUxMy4xMSw0OTYuMzFoMi4xN2wxLjI5LDQuMjgsMS40My00LjNoMS43NmwxLjQzLDQuMywxLjI5LTQuMjhoMi4xMmwtMi40Nyw3LjQ1aC0xLjc5bC0xLjQ5LTQuMjYtMS40OCw0LjI2aC0xLjc5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTI2LjI2LDQ5Ni4zMWg1Ljk1djEuNzRoLTMuOTJ2MS4xMmgzLjU1djEuNjJoLTMuNTVWNTAyaDR2MS43NGgtNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUzNC4xNiw0OTYuMzFoMy41YTMuMjMsMy4yMywwLDAsMSwyLjQxLjgsMi4yOSwyLjI5LDAsMCwxLC42NiwxLjcydjBhMi4zNCwyLjM0LDAsMCwxLTEuNTIsMi4yN2wxLjc2LDIuNThoLTIuMzdsLTEuNDktMi4yNGgtLjl2Mi4yNGgtMlptMy40LDMuNTVjLjcsMCwxLjEtLjM0LDEuMS0uODh2MGMwLS41OC0uNDItLjg4LTEuMTEtLjg4aC0xLjM0djEuNzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01NDIuNiw0OTYuMzFoNS45NXYxLjc0aC0zLjkydjEuMTJoMy41NXYxLjYyaC0zLjU1VjUwMmg0djEuNzRoLTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01NTAuNDksNDk2LjMxaDIuODVjMi42NCwwLDQuMTcsMS41Miw0LjE3LDMuNjZ2MGMwLDIuMTMtMS41NSwzLjcyLTQuMjIsMy43MmgtMi44MVptMi44OCw1LjU4YTEuODEsMS44MSwwLDAsMCwyLTEuODd2MGExLjgyLDEuODIsMCwwLDAtMi0xLjg3aC0uODN2My43NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQ5Ni43NCw1MDcuMjdoMS4zOGwyLjI1LDMuNSwyLjI1LTMuNUg1MDR2Ny40aC0xLjN2LTUuM2wtMi4zMywzLjQ5aDBMNDk4LDUwOS4zOXY1LjI4aC0xLjI4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTA2Ljc2LDUwNy4yN2g1LjQ4djEuMTZoLTQuMTh2MS45MmgzLjcxdjEuMTZoLTMuNzF2Mmg0LjI0djEuMTZoLTUuNTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MTQuNjksNTA3LjI3aDIuNzZhMy42OSwzLjY5LDAsMCwxLDMuOTMsMy42OHYwYTMuNywzLjcsMCwwLDEtMy45MywzLjdoLTIuNzZabTIuNzYsNi4yMUEyLjQxLDIuNDEsMCwwLDAsNTIwLDUxMXYwYTIuNDMsMi40MywwLDAsMC0yLjU3LTIuNTFINTE2djVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MjMuODcsNTA3LjI3aDEuM3Y3LjRoLTEuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUyNy42Nyw1MTF2MGEzLjc0LDMuNzQsMCwwLDEsMy44MS0zLjgyLDMuODYsMy44NiwwLDAsMSwyLjksMS4xNWwtLjgzLDFhMi45NCwyLjk0LDAsMCwwLTIuMDctLjkyLDIuNDgsMi40OCwwLDAsMC0yLjQ0LDIuNjF2MGEyLjUsMi41LDAsMCwwLDIuNDQsMi42MywyLjksMi45LDAsMCwwLDIuMTItMWwuODMuODVhMy44MiwzLjgyLDAsMCwxLTMsMS4zMUEzLjcyLDMuNzIsMCwwLDEsNTI3LjY3LDUxMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUzNi43MSw1MDcuMjdINTM4djcuNGgtMS4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTQwLjgzLDUwNy4yN0g1NDJsNCw1LjExdi01LjExaDEuMjh2Ny40aC0xLjA5bC00LjA4LTUuMjZ2NS4yNmgtMS4yOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTU1MCw1MDcuMjdoNS40OHYxLjE2aC00LjE4djEuOTJINTU1djEuMTZoLTMuNzF2Mmg0LjI0djEuMTZINTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNDg3LjU1LDUxNUg0NDIuNDhWNDk0aDQ1LjA3djMuMzJoMy4zMnYxNC4zNGgtMy4zMlptLTQzLjg4LTEuMTloNDIuNjl2LTMuMzJoMy4zMnYtMTJoLTMuMzJ2LTMuMzJINDQzLjY3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxyZWN0IGNsYXNzPSJjIiB4PSIzLjU3IiB5PSIxMi41OSIgd2lkdGg9IjcuMiIgaGVpZ2h0PSIxMy44NCIvPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSI3LjE3IiBjeT0iMy42IiByPSIzLjYiLz48cmVjdCBjbGFzcz0iZCIgeD0iMTIuNzEiIHk9IjEyLjU5IiB3aWR0aD0iNy4yIiBoZWlnaHQ9IjEzLjg0Ii8+PGNpcmNsZSBjbGFzcz0iZCIgY3g9IjE2LjMiIGN5PSIzLjYiIHI9IjMuNiIvPjxyZWN0IGNsYXNzPSJlIiB4PSIyMS44NCIgeT0iMTIuNTkiIHdpZHRoPSI3LjIiIGhlaWdodD0iMTMuODQiLz48Y2lyY2xlIGNsYXNzPSJlIiBjeD0iMjUuNDQiIGN5PSIzLjYiIHI9IjMuNiIvPjxwb2x5Z29uIGNsYXNzPSJmIiBwb2ludHM9IjQ0LjgyIDE1LjkxIDQxLjUgMTUuOTEgNDEuNSAxMi41OSAzNC4zIDEyLjU5IDM0LjMgMTUuOTEgMzAuOTggMTUuOTEgMzAuOTggMjMuMTEgMzQuMyAyMy4xMSAzNC4zIDI2LjQzIDQxLjUgMjYuNDMgNDEuNSAyMy4xMSA0NC44MiAyMy4xMSA0NC44MiAxNS45MSIvPjxjaXJjbGUgY2xhc3M9ImYiIGN4PSIzNy45IiBjeT0iMy42IiByPSIzLjYiLz48L3N2Zz4='/>\n</center><h1>About this study</h1><hr/><p>This study will estimate your risk of developing a heart attack, stroke, or other cardiovascular event due to the buildup of cholesterol in your blood.</p>\n\n<p>We will use your health records stored on your iPhone and medical history to recommend lifestyle advice and if you benefit from <strong>medication</strong> to lower blood cholesterol and prevent developing a cardiovascular event in the future.</p>\n\n<p>Recommendations are based on guidelines published by the <em>American College of Cardiology</em> and <em>American Heart Association</em>.</p>\n",
+  "enrollment": [
+     {
+        "reference": "#enrollmentgroup"
+     }
+  ],
+  "identifier": [
+     {
+        "system": "http://dbmi.hms.harvard.edu",
+        "value": "ppm-guidelines-ascvd-study"
+     }
+  ],
+  "note": [
+     {
+        "text": "<h1>How this study works</h1>\n<hr/>\n<p>After confirming eligibility through this app, you will be presented with a list of <strong>4</strong> steps to complete.</p>\n\n<p>These steps consist of short surveys on your medical history and relevant risk factors for heart disease. We will also ask your permission to retrieve select data from your iPhone's Apple Health app.</p>\n\n<p>We estimate it should take no more than 30 minutes in total to complete all the steps in this research study.</p>\n\n<center><img style='width:250px; height:auto;'\n\tsrc=''/></center>\n"
+     },
+     {
+        "text": "<h1>What will this mean for me?</h1>\n\n<hr/>\n\n<p>Once all steps are completed, you will be able to view and download a recommendations <strong>report</strong> that <strong>can be shared with your doctor.</strong></p>\n\n<p>This report will include information on your estimated risk of developing heart disease, related lab tests and medical history, lifestyle recommendations and if you require a medication, as appropriate.</p>\n"
+     },
+     {
+        "text": "<h1>Why are we conducting this study?</h1>\n<hr/>\n<p>Heart disease is the leading cause of death in the United States.</p> \n\n<p>With appropriate lifestyle and medical management, heart disease can be prevented.</p>\n\n<p>This study will help us better understand your access to health data and how that can empower you with information on current guidelines to prevent heart disease.</p>\n\n"
+     },
+     {
+        "text": "<h1>About us</h1>\n<hr/>\n<p>This study is conducted by the Department of Biomedical Informatics at Harvard Medical School led by Prof. Isaac Kohane, MD, PhD and the People Powered Medicine group. Learn more about our work:</p>\n\n<p><a href=\"https://peoplepoweredmedicine.org/heart\">People Heart Study</a></p>\n<p><a href=\"https://dbmi.hms.harvard.edu\">Department of Biomedical Informatics</a></p>\n<p>Contact us <a href=\"mailto://ppm@hms.harvard.edu\">ppm@hms.harvard.edu</a></p>\n"
+     }
+  ],
+  "objective": [
+     {
+        "name": "Primary Objective",
+        "type": {
+           "coding": [
+              {
+                 "code": "primary",
+                 "display": "Primary",
+                 "system": "http://terminology.hl7.org/CodeSystem/research-study-objective-type"
+              }
+           ],
+           "text": "We will assess the completeness of your access to your health data obtained electronically through the use of application programming interfaces"
+        }
+     },
+     {
+        "name": "Secondary Objective",
+        "type": {
+           "coding": [
+              {
+                 "code": "secondary",
+                 "display": "Primary",
+                 "system": "http://terminology.hl7.org/CodeSystem/research-study-objective-type"
+              }
+           ],
+           "text": "Based on your data, we will assess if you are currently on recommended therapy for the primary prevention of cardiovascular disease, specifically the use of Statin medications"
+        }
+     }
+  ],
+  "primaryPurposeType": {
+     "coding": [
+        {
+           "code": "screening",
+           "display": "SCREENING",
+           "system": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+        },
+        {
+           "code": "health-services-research",
+           "display": "HEALTH-SERVICES-RESEARCH",
+           "system": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+        }
+     ]
+  },
+  "sponsor": {
+     "reference": "#hms_organization"
+  },
+  "status": "active",
+  "title": "People Heart Study",
+  "resourceType": "ResearchStudy"
+}

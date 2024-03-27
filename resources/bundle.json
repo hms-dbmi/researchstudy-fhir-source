@@ -1,0 +1,16 @@
+{
+  "resourceType": "Bundle",
+  "id": "",
+  "meta": {
+    "lastUpdated": ""
+  },
+  "type": "searchset",
+  "total": 0,
+  "link": [
+    {
+      "relation": "self",
+      "url": ""
+    }
+  ],
+  "entry": []
+}
