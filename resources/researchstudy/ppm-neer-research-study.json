@@ -1,0 +1,140 @@
+{
+  "id": "ppm-neer-research-study",
+  "contained": [
+     {
+        "id": "enrollmentgroup",
+        "actual": false,
+        "characteristic": [
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "exception-responder",
+                       "display": "Exceptional responder to cancer treatment",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Exceptional responder to cancer treatment"
+              },
+              "exclude": false,
+              "valueBoolean": true
+           },
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "location-US",
+                       "display": "Residents of the United States",
+                       "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                    }
+                 ],
+                 "text": "Living in the United States"
+              },
+              "exclude": false,
+              "valueBoolean": true
+           },
+           {
+              "code": {
+                 "coding": [
+                    {
+                       "code": "30525-0",
+                       "display": "Age 18 or older",
+                       "system": "http://loinc.org"
+                    }
+                 ],
+                 "text": "Age 18 or older"
+              },
+              "exclude": false,
+              "valueRange": {
+                 "low": {
+                    "value": 18
+                 }
+              }
+           }
+        ],
+        "code": {
+           "text": "We are looking for people who have had a unique response to cancer treatments that are not effective for most other patients. Previously, these patients were dismissed as outliers under the assumption that not much could be learned, but this thinking has recently reversed dramatically. Just as detailed study of rare diseases is illuminating basic biology in a way that informs larger disease populations, early study of exceptional responders is revealing new insights into tumor heterogeneity, overcoming heterogeneity-imposed therapeutic barriers, enabling more sophisticated pre-trial patient screening and enriching genomic profiling studies.",
+           "_text": {
+              "extension": [
+                 {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style>body { font: -apple-system-body; }</style></head>We are looking for people who have had a unique response to cancer treatments that are not effective for most other patients. Previously, these patients were dismissed as outliers under the assumption that not much could be learned, but this thinking has recently reversed dramatically. Just as detailed study of rare diseases is illuminating basic biology in a way that informs larger disease populations, early study of exceptional responders is revealing new insights into tumor heterogeneity, overcoming heterogeneity-imposed therapeutic barriers, enabling more sophisticated pre-trial patient screening and enriching genomic profiling studies.</div>"
+                 }
+              ]
+           }
+        },
+        "name": "PPM NEER Study Inclusion Criteria",
+        "type": "person",
+        "resourceType": "Group"
+     },
+     {
+        "id": "hms_organization",
+        "alias": [
+           "Department of Biomedical Informatics, Harvard Medical School"
+        ],
+        "identifier": [
+           {
+              "system": "https://hms.harvard.edu",
+              "value": "Department of Biomedical Informatics"
+           }
+        ],
+        "name": "Harvard Medical School",
+        "resourceType": "Organization"
+     }
+  ],
+  "contact": [
+     {
+        "name": "Cassandra Perry",
+        "telecom": [
+           {
+              "system": "phone",
+              "value": "(617)-432-5484"
+           },
+           {
+              "system": "email",
+              "value": "ppm@hms.harvard.edu"
+           }
+        ]
+     }
+  ],
+  "description": "<center><img style='margin: 1em 0;' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUuMDQiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxMTUuMDQgMzAiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiM0ZjUxNWI7fS5ie2ZpbGw6I2ViMjIyNzt9LmN7ZmlsbDojMzZhYWRiO30uZHtmaWxsOiM2ZDdmYTQ7fS5le2ZpbGw6I2E1NTU2ZDt9LmZ7ZmlsbDojZWEyMjI4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+cHBtX1JHQl8xMTV4MzA8L3RpdGxlPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDk2LjQ1LDQ4NS4zNWgzLjE3YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MDQuNDEsNDg1LjM1aDUuOTV2MS43NGgtMy45MnYxLjEySDUxMHYxLjYyaC0zLjU1VjQ5MWg0djEuNzRoLTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MTIsNDg5LjA3djBhNCw0LDAsMCwxLDgsMHYwYTQsNCwwLDAsMS04LDBabTUuODcsMHYwYTEuOTIsMS45MiwwLDAsMC0xLjktMiwxLjg4LDEuODgsMCwwLDAtMS44NywydjBhMS45MiwxLjkyLDAsMCwwLDEuODksMkExLjg5LDEuODksMCwwLDAsNTE3Ljg3LDQ4OS4wN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUyMS44OCw0ODUuMzVINTI1YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MjkuODMsNDg1LjM1aDJWNDkxaDMuNTh2MS44aC01LjYzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTM3LjE5LDQ4NS4zNWg1Ljk1djEuNzRoLTMuOTJ2MS4xMmgzLjU1djEuNjJoLTMuNTVWNDkxaDR2MS43NGgtNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTU0NC44NSw0ODguNTZoMy40N3YxLjc2aC0zLjQ3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDk2LjQ1LDQ5Ni4zMWgzLjE3YzEuODcsMCwzLjA3LDEsMy4wNywyLjZ2MGMwLDEuNzQtMS4zNCwyLjY2LTMuMTgsMi42NmgtMXYyLjExaC0yWm0zLDMuNjhjLjczLDAsMS4xNy0uMzgsMS4xNy0xdjBjMC0uNjMtLjQ0LTEtMS4xOC0xaC0xdjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MDQuMTUsNTAwdjBhNCw0LDAsMCwxLDgsMHYwYTQsNCwwLDAsMS04LDBabTUuODcsMHYwYTEuOTIsMS45MiwwLDAsMC0xLjktMiwxLjg4LDEuODgsMCwwLDAtMS44NywydjBhMS45MiwxLjkyLDAsMCwwLDEuODksMkExLjg5LDEuODksMCwwLDAsNTEwLDUwMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUxMy4xMSw0OTYuMzFoMi4xN2wxLjI5LDQuMjgsMS40My00LjNoMS43NmwxLjQzLDQuMywxLjI5LTQuMjhoMi4xMmwtMi40Nyw3LjQ1aC0xLjc5bC0xLjQ5LTQuMjYtMS40OCw0LjI2aC0xLjc5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTI2LjI2LDQ5Ni4zMWg1Ljk1djEuNzRoLTMuOTJ2MS4xMmgzLjU1djEuNjJoLTMuNTVWNTAyaDR2MS43NGgtNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUzNC4xNiw0OTYuMzFoMy41YTMuMjMsMy4yMywwLDAsMSwyLjQxLjgsMi4yOSwyLjI5LDAsMCwxLC42NiwxLjcydjBhMi4zNCwyLjM0LDAsMCwxLTEuNTIsMi4yN2wxLjc2LDIuNThoLTIuMzdsLTEuNDktMi4yNGgtLjl2Mi4yNGgtMlptMy40LDMuNTVjLjcsMCwxLjEtLjM0LDEuMS0uODh2MGMwLS41OC0uNDItLjg4LTEuMTEtLjg4aC0xLjM0djEuNzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01NDIuNiw0OTYuMzFoNS45NXYxLjc0aC0zLjkydjEuMTJoMy41NXYxLjYyaC0zLjU1VjUwMmg0djEuNzRoLTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01NTAuNDksNDk2LjMxaDIuODVjMi42NCwwLDQuMTcsMS41Miw0LjE3LDMuNjZ2MGMwLDIuMTMtMS41NSwzLjcyLTQuMjIsMy43MmgtMi44MVptMi44OCw1LjU4YTEuODEsMS44MSwwLDAsMCwyLTEuODd2MGExLjgyLDEuODIsMCwwLDAtMi0xLjg3aC0uODN2My43NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQ5Ni43NCw1MDcuMjdoMS4zOGwyLjI1LDMuNSwyLjI1LTMuNUg1MDR2Ny40aC0xLjN2LTUuM2wtMi4zMywzLjQ5aDBMNDk4LDUwOS4zOXY1LjI4aC0xLjI4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTA2Ljc2LDUwNy4yN2g1LjQ4djEuMTZoLTQuMTh2MS45MmgzLjcxdjEuMTZoLTMuNzF2Mmg0LjI0djEuMTZoLTUuNTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MTQuNjksNTA3LjI3aDIuNzZhMy42OSwzLjY5LDAsMCwxLDMuOTMsMy42OHYwYTMuNywzLjcsMCwwLDEtMy45MywzLjdoLTIuNzZabTIuNzYsNi4yMUEyLjQxLDIuNDEsMCwwLDAsNTIwLDUxMXYwYTIuNDMsMi40MywwLDAsMC0yLjU3LTIuNTFINTE2djVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDQyLjQ4IC00ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MjMuODcsNTA3LjI3aDEuM3Y3LjRoLTEuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUyNy42Nyw1MTF2MGEzLjc0LDMuNzQsMCwwLDEsMy44MS0zLjgyLDMuODYsMy44NiwwLDAsMSwyLjksMS4xNWwtLjgzLDFhMi45NCwyLjk0LDAsMCwwLTIuMDctLjkyLDIuNDgsMi40OCwwLDAsMC0yLjQ0LDIuNjF2MGEyLjUsMi41LDAsMCwwLDIuNDQsMi42MywyLjksMi45LDAsMCwwLDIuMTItMWwuODMuODVhMy44MiwzLjgyLDAsMCwxLTMsMS4zMUEzLjcyLDMuNzIsMCwwLDEsNTI3LjY3LDUxMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTUzNi43MSw1MDcuMjdINTM4djcuNGgtMS4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTQwLjgzLDUwNy4yN0g1NDJsNCw1LjExdi01LjExaDEuMjh2Ny40aC0xLjA5bC00LjA4LTUuMjZ2NS4yNmgtMS4yOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDIuNDggLTQ4NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTU1MCw1MDcuMjdoNS40OHYxLjE2aC00LjE4djEuOTJINTU1djEuMTZoLTMuNzF2Mmg0LjI0djEuMTZINTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNDg3LjU1LDUxNUg0NDIuNDhWNDk0aDQ1LjA3djMuMzJoMy4zMnYxNC4zNGgtMy4zMlptLTQzLjg4LTEuMTloNDIuNjl2LTMuMzJoMy4zMnYtMTJoLTMuMzJ2LTMuMzJINDQzLjY3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0Mi40OCAtNDg1KSIvPjxyZWN0IGNsYXNzPSJjIiB4PSIzLjU3IiB5PSIxMi41OSIgd2lkdGg9IjcuMiIgaGVpZ2h0PSIxMy44NCIvPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSI3LjE3IiBjeT0iMy42IiByPSIzLjYiLz48cmVjdCBjbGFzcz0iZCIgeD0iMTIuNzEiIHk9IjEyLjU5IiB3aWR0aD0iNy4yIiBoZWlnaHQ9IjEzLjg0Ii8+PGNpcmNsZSBjbGFzcz0iZCIgY3g9IjE2LjMiIGN5PSIzLjYiIHI9IjMuNiIvPjxyZWN0IGNsYXNzPSJlIiB4PSIyMS44NCIgeT0iMTIuNTkiIHdpZHRoPSI3LjIiIGhlaWdodD0iMTMuODQiLz48Y2lyY2xlIGNsYXNzPSJlIiBjeD0iMjUuNDQiIGN5PSIzLjYiIHI9IjMuNiIvPjxwb2x5Z29uIGNsYXNzPSJmIiBwb2ludHM9IjQ0LjgyIDE1LjkxIDQxLjUgMTUuOTEgNDEuNSAxMi41OSAzNC4zIDEyLjU5IDM0LjMgMTUuOTEgMzAuOTggMTUuOTEgMzAuOTggMjMuMTEgMzQuMyAyMy4xMSAzNC4zIDI2LjQzIDQxLjUgMjYuNDMgNDEuNSAyMy4xMSA0NC44MiAyMy4xMSA0NC44MiAxNS45MSIvPjxjaXJjbGUgY2xhc3M9ImYiIGN4PSIzNy45IiBjeT0iMy42IiByPSIzLjYiLz48L3N2Zz4='/>\n</center><p>“NEER” stands for <strong>Network of Enigmatic Exceptional Responders.</strong></p> <p>We are looking for people who have had a unique response to cancer treatments that are not effective for most other patients. Previously, these patients were dismissed as outliers under the assumption that not much could be learned, but this thinking has recently reversed dramatically.</p> <p>Just as detailed study of rare diseases is illuminating basic biology in a way that informs larger disease populations, early study of exceptional responders is revealing new insights into tumor heterogeneity, overcoming heterogeneity-imposed therapeutic barriers, enabling more sophisticated pre-trial patient screening and enriching genomic profiling studies.</p>\n",
+  "enrollment": [
+     {
+        "reference": "#enrollmentgroup"
+     }
+  ],
+  "identifier": [
+     {
+        "system": "http://dbmi.hms.harvard.edu",
+        "value": "ppm-guidelines-ascvd-study"
+     }
+  ],
+  "note": [
+     {
+        "text": "<h3>Who Can Volunteer</h3> <p>Exceptional Responders may include:</p> <ul> <li>patients in early-phase clinical trials in which only a small percentage of the patients responded to the treatments being studied,</li> <li>patients who were treated with drugs not found to be generally effective for their disease,</li> <li>patients who were treated in later-phase clinical trials of single agents or combinations,</li> <li>or even patients who were treated with established therapies.</li> </ul>\n"
+     },
+     {
+        "text": "<h3>What to Expect</h3><p>Here's what participation in the study involves.</p> <div class=\"col-lg-3 col-md-6 col-sm-6\"> <p class=\"caption\">Register via email and give a brief description of what makes you an exceptional responder to cancer treatment.</p> </div> <div class=\"col-lg-3 col-md-6 col-sm-6\"> <p class=\"caption\">Complete an online questionnaire about your health history.</p> </div> <div class=\"col-lg-3 col-md-6 col-sm-6\"> <p class=\"caption\">Give access to your medical records.</p> </div> <div class=\"col-lg-3 col-md-6 col-sm-6\"> <p class=\"caption\">Collect blood, tumor, and stool (microbiome) samples for genetic testing.</p> </div>\n\n"
+     }
+  ],
+  "primaryPurposeType": {
+     "coding": [
+        {
+           "code": "screening",
+           "display": "SCREENING",
+           "system": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+        },
+        {
+           "code": "health-services-research",
+           "display": "HEALTH-SERVICES-RESEARCH",
+           "system": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+        }
+     ]
+  },
+  "sponsor": {
+     "reference": "#hms_organization"
+  },
+  "status": "active",
+  "title": "People-Powered Medicine: Network of Enigmatic Exceptional Responders",
+  "resourceType": "ResearchStudy"
+}
