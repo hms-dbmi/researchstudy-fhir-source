@@ -135,7 +135,6 @@
             ],
             "status": "active",
             "subtitle": "Tell us more about yourself to help estimate your risk of developing heart disease",
-            "timingTiming": {},
             "title": "Demographic information",
             "useContext": [
                 {
@@ -364,7 +363,7 @@
                 }
             ],
             "kind": "Task",
-            "name": "Demographic information",
+            "name": "Your Health Records",
             "participant": [
                 {
                     "type": "patient"
@@ -374,7 +373,6 @@
             "purpose": "Task for participant to complete as part of a study activity for People Heart study",
             "status": "active",
             "subtitle": "Link your iPhone Health app with your medical records to allow access to your test results and medical history.",
-            "timingTiming": {},
             "title": "Your Health records",
             "useContext": [
                 {
@@ -388,74 +386,6 @@
                 }
             ],
             "resourceType": "ActivityDefinition"
-        },
-        {
-            "codeFilter": [
-                {
-                    "valueSet": "#phs-conditions"
-                }
-            ],
-            "subjectCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "Patient",
-                        "display": "Patient",
-                        "system": "http://hl7.org/fhir/ValueSet/subject-type"
-                    }
-                ]
-            },
-            "type": "Condition"
-        },
-        {
-            "codeFilter": [
-                {
-                    "valueSet": "#phs-medications"
-                }
-            ],
-            "subjectCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "Patient",
-                        "display": "Patient",
-                        "system": "http://hl7.org/fhir/ValueSet/subject-type"
-                    }
-                ]
-            },
-            "type": "Medication"
-        },
-        {
-            "codeFilter": [
-                {
-                    "valueSet": "#phs-medications"
-                }
-            ],
-            "subjectCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "Patient",
-                        "display": "Patient",
-                        "system": "http://hl7.org/fhir/ValueSet/subject-type"
-                    }
-                ]
-            },
-            "type": "MedicationRequest"
-        },
-        {
-            "codeFilter": [
-                {
-                    "valueSet": "#phs-observations"
-                }
-            ],
-            "subjectCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "Patient",
-                        "display": "Patient",
-                        "system": "http://hl7.org/fhir/ValueSet/subject-type"
-                    }
-                ]
-            },
-            "type": "Observation"
         },
         {
             "id": "phs-conditions",
@@ -2393,7 +2323,6 @@
             ],
             "status": "active",
             "subtitle": "Please take a follow-up survey after you have had a discussion with your doctor",
-            "timingTiming": {},
             "title": "Follow-up survey",
             "useContext": [
                 {
