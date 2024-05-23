@@ -111,6 +111,15 @@
             "resourceType": "Organization"
         },
         {
+            "id": "PI_PeopleHeartStudy",
+            "name": [
+                {
+                    "text": "Dr. Isaac Kohane MD, PhD"
+                }
+            ],
+            "resourceType": "Practitioner"
+        },
+        {
             "id": "definition-demographic-survey",
             "meta": {
                 "profile": [
@@ -2654,19 +2663,7 @@
     ],
     "condition": [
         {
-            "coding": [
-                {
-                    "code": "hypercholesterolemia_snomed_code",
-                    "display": "Hypercholesterolemia",
-                    "system": "http://snomed.info/sct"
-                },
-                {
-                    "code": "hyperthyroidism_snomed_code",
-                    "display": "Hyperthyroidism",
-                    "system": "http://snomed.info/sct"
-                }
-            ],
-            "text": "Conditions: Hypercholesterolemia and Hyperthyroidism"
+            "text": "Healthy subjects"
         }
     ],
     "contact": [
@@ -2694,6 +2691,30 @@
         {
             "system": "http://dbmi.hms.harvard.edu",
             "value": "ppm-guidelines-ascvd-study"
+        }
+    ],
+    "keyword": [
+        {
+            "coding": [
+                {
+                    "code": "468361000124104",
+                    "display": "Assessment of risk for atherosclerotic cardiovascular disease",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "84698008",
+                    "display": "Cholesterol",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "440358008",
+                    "display": "Primary prevention of cardiovascular disease",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        },
+        {
+            "text": "ASCVD"
         }
     ],
     "note": [
@@ -2741,6 +2762,9 @@
             }
         }
     ],
+    "period": {
+        "start": "2024-01-01"
+    },
     "primaryPurposeType": {
         "coding": [
             {
@@ -2755,10 +2779,25 @@
             }
         ]
     },
+    "principalInvestigator": {
+        "reference": "#Practitioner/PI_PeopleHeartStudy"
+    },
     "protocol": [
         {
             "display": "People Heart Study protocol",
             "reference": "#protocol-people-heart-study"
+        }
+    ],
+    "relatedArtifact": [
+        {
+            "display": "People heart study home page",
+            "type": "documentation",
+            "url": "https://peoplepoweredmedicine.org/heart"
+        },
+        {
+            "display": "People heart study app link",
+            "type": "depends-on",
+            "url": "https://bit.ly/people-heart-study"
         }
     ],
     "sponsor": {
