@@ -2780,7 +2780,7 @@
         ]
     },
     "principalInvestigator": {
-        "reference": "#Practitioner/PI_PeopleHeartStudy"
+        "reference": "#PI_PeopleHeartStudy"
     },
     "protocol": [
         {
