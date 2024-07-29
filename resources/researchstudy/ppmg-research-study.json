@@ -78,9 +78,9 @@
                     "code": {
                         "coding": [
                             {
-                                "code": "heart-status",
+                                "code": "78941-2",
                                 "display": "Having No history of heart attack, stroke or other heart related illness",
-                                "system": "http://dbmi.hms.harvard.edu/fhir/eligibility"
+                                "system": "http://loinc.org"
                             }
                         ],
                         "text": "Have you ever had a heart attack, stroke or other heart related illness?"
@@ -2292,6 +2292,15 @@
             ],
             "publisher": "Dept of Biomedical Informatics, Harvard Medical School",
             "purpose": "Definition of a task as part of a study participation activity for People Heart study",
+            "relatedArtifact": [
+                {
+                    "display": "This task can be executed only in the People Heart Study iOS app",
+                    "label": "People Heart Study app",
+                    "resource": "#device-people-heart-study-app",
+                    "type": "depends-on",
+                    "url": "https://apps.apple.com/us/app/people-heart-study/id1591183594"
+                }
+            ],
             "status": "active",
             "title": "Guideline-supported Recommendations to control blood cholesterol and prevent heart attack, stroke or other cardiovascular event",
             "useContext": [
@@ -2306,6 +2315,34 @@
                 }
             ],
             "resourceType": "ActivityDefinition"
+        },
+        {
+            "id": "device-people-heart-study-app",
+            "contact": [
+                {
+                    "system": "url",
+                    "value": "https://peoplepoweredmedicine.org/heart"
+                }
+            ],
+            "identifier": [
+                {
+                    "system": "http://dbmi.hms.harvard.edu",
+                    "value": "people-heart-study-app"
+                }
+            ],
+            "manufacturer": "Harvard Medical School",
+            "status": "active",
+            "type": {
+                "coding": [
+                    {
+                        "code": "706689003",
+                        "display": "Application program software",
+                        "system": "http://snomed.info/sct"
+                    }
+                ]
+            },
+            "url": "https://apps.apple.com/us/app/people-heart-study/id1591183594",
+            "resourceType": "Device"
         },
         {
             "id": "definition-followup-survey",
